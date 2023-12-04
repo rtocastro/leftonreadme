@@ -1,33 +1,29 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+
+
 function renderLicenseBadge(license) {
-  var badge = "";
+
+}
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
 
 
 
-  }
+}
 
-  // TODO: Create a function that returns the license link
-  // If there is no license, return an empty string
-  function renderLicenseLink(license) {
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
 
-    // Check if the license text contains "MIT License"
-
-
-  }
-
-  // TODO: Create a function that returns the license section of README
-  // If there is no license, return an empty string
-  function renderLicenseSection(license) {}
-
-
+}
 
 
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
     return `# ${data.title}
-
-${data.licenseBadge}  
 
 ## Description
 
@@ -38,11 +34,13 @@ ${data.description}
 
  ${data.contents}
 
-
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Contributions](#Contributions)
+- [Tests](#tests)
+- [Questions](#Questions)
 
 ## Installation
 
@@ -56,7 +54,19 @@ ${data.usage}
 
 ${data.license}
 
+## Contributions
+
+${data.contributing}
+
+## Tests
+
+## Questions
+
+Made by http://www.github.com/${data.githubuser}
+
+If you have any questions or comments please e-mail ${data.mail}
+
 `;
-  }
+}
 
   module.exports = generateMarkdown;
